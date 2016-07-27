@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+DQA f2f meeting presentation demo
+Second level page demo
+
+Created by: Raibatak Das
+June 2016
+-->
+
+<head>
+  <title>DQA: Plausibility</title>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet", type="text/css", href="css/960_12_col.css" />
+  <link rel="stylesheet", type="text/css" href="css/unslider.css"/>
+  <link rel="stylesheet", type="text/css" href="css/unslider-dots.css"/>
+  <link rel="stylesheet", type="text/css", href="minimal-dqa-presentation.css"/>
+  <!--link rel="stylesheet", type="text/css", href="css/dqa-presentation.css" /-->
+</head>
+
+<body>
+  <div class="container_12 clearfix">
+    <!-- start of header-->
+    <div id="header" class="grid_12">
+      <h2 class="plausibility">DQA visualizations: Plausibility</h2>
+      <div id="nav">
+        <ul>
+          <li class="home"><a class="" href="index.html">Home</a></li>
+          <li class="completeness"><a href="completeness.html">Completeness</a></li>
+          <li class="fidelity"><a href="fidelity.html">Fidelity</a></li>
+          <li class="plausibility"><a href="plausibility.html">Plausibility</a></li>
+          <li class="dashboard"><a href="dashboards.html">Dashboards</a></li>
+        </ul>
+      </div>
+    </div> 
+    <!-- end of header -->
+    
+    <!-- top level description -->
+    <div class="grid_12">
+      <p><b>Plausibility: </b> Are data value believable? Do data values accurately reflect the concepts that they are supposed to represent? Do sequences of values make sense, such as no new encounters after date of death or no negative weight/height measurements.</p>
+    </div>
+    <hr>
+    
+    <!-- Card #1 starts here -->
+    <div class="grid_4">
+      <p>Visualizing plausibility</p>
+      <hr>
+      <p> Example: Assessing the plausiblity of false positive diagnoses rates within a set of observation sites. These visualizations demonstrate how anomalously high rates can be detected and flagges. The data can be examined at increasing levels of detail depending on user needs.
+      </p> 
+    </div> <div class="grid_8">
+      <div class="slides">
+        <ul>
+          <li> <img class="slide" src="images/anomaly-by-site-2.png"> </li>
+          <li> <img class="slide" src="images/anomaly-by-site-3.png"> </li>
+          <li> <img class="slide" src="images/anomaly-by-site-4.png"> </li>
+        </ul>
+      </div>
+    </div>
+  <!-- end of Card #1 -->
+  <hr />
+
+  <div class="grid_4">
+      <p>Event Co-occurrence Explorer Mockup</p>
+      <hr>
+      <p>Idea for a complex, interactive visualization for exploring the frequency
+          of specific event types across patients and the proportion of patients
+          experiencing any given pair of events.</p>
+    </div> 
+    <div class="grid_8">
+      <img class="slide" src="images/co-occurrence-mockup.png" />
+    </div>
+    <hr />
+    
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/unslider-min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      $('.slides').unslider();
+    });
+  </script>
+
+  </body>
+</html>    

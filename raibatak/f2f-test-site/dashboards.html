@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+DQA f2f meeting presentation demo
+Second level page demo
+
+Created by: Raibatak Das
+June 2016
+-->
+
+<head>
+  <title>DQA dashboards</title>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet", type="text/css", href="css/960_12_col.css"/>
+  <link rel="stylesheet", type="text/css" href="css/unslider.css"/>
+  <link rel="stylesheet", type="text/css" href="css/unslider-dots.css"/>
+  <link rel="stylesheet", type="text/css", href="minimal-dqa-presentation.css"/>
+</head>
+
+<body>
+  <div class="container_12 clearfix">
+    <!-- start of header-->
+    <div id="header" class="grid_12">
+      <h2 class="dashboard">DQA dashboard designs</h2>
+      <div id="nav">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="completeness"><a href="completeness.html">Completeness</a></li>
+          <li class="fidelity"><a href="fidelity.html">Fidelity</a></li>
+          <li class="plausibility"><a href="plausibility.html">Plausibility</a></li>
+          <li class="dashboard"><a href="dashboards.html">Dashboards</a></li>
+        </ul>
+      </div>
+    </div> 
+    <!-- end of header -->
+    
+    <!-- top level description -->
+    <div class="grid_12">
+      <p><b>Dashboard designs: </b> Can we create a tool to assess data quality of many datasets within a unified framework?</p>
+    </div>
+    <hr>
+    
+    <!-- Card #1 starts here -->
+    <div class="grid_4">
+      <p>Dashboard mockup: Travis</p>
+      <hr>
+      <p> Allows the user to load in a dataset and select specific categories within the data which need to be examined for data quality. The explorer provides a visual dashboard with overview gauging of the data quality specific to Completeness, Fidelity and Plausibility. The user can drill-down into areas by clicking on a sub-item such as Visits and gain more insight via visualizations designed to pinpoint areas of potential data quality within that category.
+      <br>
+      <a target="_blank" href="https://marvelapp.com/3100haj">Click here for interactive dashboard</a>
+      </p>
+    </div> <div class="grid_8">
+      <div class="slides">
+        <ul>
+          <li> <img class="slide" src="images/travis-dash-1.png"> </li>
+          <li> <img class="slide" src="images/travis-dash-2.png"> </li>
+          <li> <img class="slide" src="images/travis-dash-3.png"> </li>
+          <li> <img class="slide" src="images/travis-dash-4.png"> </li>
+        </ul>
+      </div>
+    </div>
+  <!-- end of Card #1 -->
+  <hr>
+  
+  <!-- Card #3 starts here -->
+  <div class="grid_4">
+    <p>Another design: Travis</p>
+    <hr>
+    <p> In this scenario, the user has loaded in a data set and the tool is providing an overview of the data quality - specifically related to fidelity. Position of the circle along the plot line indicates overall quality of the high level category, Demographics for instance. Color also plays a role with lower quality items toward the red spectrum and higher quality toward the blue. In this example, a drill-down in the Demographics category shows further analysis of items within including visualizations for weight and gender.<br>
+    <a target="_blank" href="https://marvelapp.com/5cg118g">Click here for interactive dashboard</a>
+    </p>
+    </div> <div class="grid_8">
+      <div class="slides">
+        <ul>
+          <li> <img class="slide" src="images/travis-dqeval-1.png"> </li>
+          <li> <img class="slide" src="images/travis-dqeval-2.png"> </li>
+          <li> <img class="slide" src="images/travis-dqeval-3.png"> </li>
+          <li> <img class="slide" src="images/travis-dqeval-4.png"> </li>
+        </ul>
+      </div>
+  </div>
+  <!-- end of Card #2-->
+  <hr />
+ 
+  <!-- Card #3 starts here -->
+  <div class="grid_4">
+    <p>Dashboard mockup: Carsten</p>
+    <hr>
+    <p> A different approach to a dashboard created with the Antetype application.
+    </p>
+    </div> <div class="grid_8">
+      <img class="slide" src="images/carsten-dash.png"> 
+  </div>
+  <!-- end of Card #3-->
+  <hr />
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+  <script src="js/unslider-min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      $('.slides').unslider();
+    });
+  </script>
+</body>
+</html> 

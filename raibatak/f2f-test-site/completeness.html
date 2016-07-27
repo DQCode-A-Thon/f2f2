@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+DQA f2f meeting presentation demo
+Second level page demo
+
+Created by: Raibatak Das
+June 2016
+-->
+
+<head>
+  <title>DQA: Completeness</title>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet", type="text/css", href="css/960_12_col.css" />
+  <link rel="stylesheet", href="css/unslider.css">
+  <link rel="stylesheet", type="text/css" href="css/unslider-dots.css"/>
+  <link rel="stylesheet", type="text/css", href="minimal-dqa-presentation.css"/>
+  <!--link rel="stylesheet", type="text/css", href="css/dqa-presentation.css" /-->
+</head>
+
+<body>
+  <div class="container_12 clearfix">
+    <!-- start of header-->
+    <div id="header" class="grid_12">
+      <h2 class="completeness">DQA visualizations: Completeness</h2>
+      <div id="nav">
+        <ul>
+          <li class="home"><a href="index.html">Home</a></li>
+          <li class="completeness"><a href="completeness.html">Completeness</a></li>
+          <li class="fidelity"><a href="fidelity.html">Fidelity</a></li>
+          <li class="plausibility"><a href="plausibility.html">Plausibility</a></li>
+          <li class="dashboard"><a href="dashboards.html">Dashboards</a></li>
+        </ul>
+      </div>
+    </div> 
+    <!-- end of header -->
+
+  <!-- top level description -->
+  <div class="grid_12">
+    <p><b>Completeness: </b> Are data values present in the amount that is expected? May be assessed by looking at counts over time or counts by non-temporal units such as counts by patients, by diagnoses, or by encounters.</p>
+  </div>
+  <hr>
+
+  <!-- Card #1 starts here -->
+    <div class="grid_4">
+      <p>Visualizing completeness</p>
+      <hr>
+      <p> Parallel coordinates is a visualization technique for 
+      multivariate data. Each axis represents event counts of
+      data in a particular domain or database table. Each curve
+      in this image represents all patients of a specific age.
+      <br>
+      <a target="_blank" href="https://sigfried.github.io/parcoords/">Click here for interactive parallel coordinates viz.</a>
+      </p>
+    </div> <div class="grid_8">
+      <a target="blank_" href="https://sigfried.github.io/parcoords/">
+        <img class="slide" src="images/parcoords-screenshot.png">
+      </a>
+    </div>
+  <!-- end of Card #1 -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/unslider-min.js"></script>
+  <script>
+    jQuery(document).ready(function($) {
+      $('.slides').unslider();
+    });
+  </script>
+
+</body>
+</html>    
